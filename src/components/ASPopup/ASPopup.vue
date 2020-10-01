@@ -1,9 +1,9 @@
 <template>
   <div class="as-popup" v-if="value" v-on="inputListeners">
-    <div class="as-popup-title">
-      test
+    <div class="as-popup-title" v-if="title">
+      {{ title }}
     </div>
-    test
+    <slot />
   </div>
 </template>
 
@@ -12,6 +12,10 @@ import { Vue, Component, Model } from 'vue-property-decorator'
 
 @Component({
   props: {
+    title: {
+      type: [String],
+      default: null
+    }
   },
   data() {
     return {

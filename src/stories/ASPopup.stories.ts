@@ -18,7 +18,6 @@ export default {
         type: 'select',
         options: ['x-left', 'x-center', 'x-right'],
       },
-      default: true,
       description: 'Horizontally align the popup'
     },
     vertical: {
@@ -26,15 +25,26 @@ export default {
         type: 'select',
         options: ['y-top', 'y-center', 'y-bottom'],
       },
-      default: true,
       description: 'Vertically align the popup'
+    },
+    title: {
+      control: { type: 'text' },
+      description: 'Title of the popup',
+    },
+    content: {
+      control: { type: 'text' },
+      description: 'Content of the popup',
     },
   },
 } as Meta;
 
 export const PopupWithProps: Story = (args, { argTypes }) => ({
   components: { ASPopup },
-  template: '<ASPopup v-model="show" :class="[vertical, horizontal]" v-on:closed="action" v-on:opened="action" />',
+  template: `
+    <ASPopup v-model="show" :class="[vertical, horizontal]" v-on:closed="action" v-on:opened="action" :title="title">
+      <span>{{ content }}</span>
+    </ASPopup>
+  `,
   props: Object.keys(argTypes),
   data() {
     return {
@@ -48,4 +58,8 @@ export const PopupWithProps: Story = (args, { argTypes }) => ({
 });
 PopupWithProps.args = {
   show: true,
+  title: 'Popup title',
+  content:'Popups can be very useful',
+  vertical: 'y-top',
+  horizontal: 'x-left'
 };

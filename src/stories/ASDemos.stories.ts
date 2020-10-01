@@ -5,13 +5,17 @@ import { storiesOf } from '@storybook/vue'
 import { ASTable } from '../components/ASTable'
 import { ASCommandline } from '../components/ASCommandline'
 import { ASFunctionKey } from '../components/ASFunctionKey'
+import { ASPopup } from '../components/ASPopup'
 import { ASGrid, ASGridSite, ASGridItem } from '../components/ASGrid'
 
 storiesOf('AS Demos', module)
   .add('Food menu', () => ({
-    components: { ASTable, ASCommandline, ASFunctionKey, ASGrid, ASGridSite, ASGridItem },
+    components: { ASTable, ASCommandline, ASFunctionKey, ASPopup, ASGrid, ASGridSite, ASGridItem },
     template: `
     <ASGridSite gridTemplateRows="80px calc(100vh - 200px) 60px">
+        <ASPopup v-model="showPopup" title="Help" class="x-center y-center">
+            <p>Write "1 FAMILY NUMBER 20" to add one pizze number 20 to the cart</p>
+        </ASPopup>
         <ASGridItem columnStart="1" columnSpan="12" gridArea="header">
             Pizza Matador
         </ASGridItem>
@@ -33,7 +37,7 @@ storiesOf('AS Demos', module)
                 <ASGridItem columnStart="1" columnSpan="12" class="pt-6">
                     <ASGrid>
                         <ASGridItem>
-                            <ASFunctionKey trigger="f1" label="Help" @action="action" />
+                            <ASFunctionKey trigger="f1" label="Help" @action="showPopup = !showPopup" />
                         </ASGridItem>
                         <ASGridItem>
                             <ASFunctionKey trigger="f3" label="Exit" @action="action" />
@@ -88,6 +92,7 @@ storiesOf('AS Demos', module)
     },
     data() {
         return {
+            showPopup: false,
             commandValue: '',
             menuHeaders: [
                 {key: 'id', label: 'ID', align: 'left'},
