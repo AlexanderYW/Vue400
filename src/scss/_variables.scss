@@ -1,0 +1,52 @@
+// Color system
+$white: #fff !default;
+$black: #000 !default;
+$blue: #00f !default;
+$green: #0f0 !default;
+$red: #f00 !default;
+
+// Spacing
+$spacer: 1rem !default;
+
+// Body
+// $body-bg: $black;
+$body-color: $green;
+
+// Button / Function key
+$button-color: $blue;
+
+// Grid
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+$grid-columns: 12 !default;
+$grid-gutter-width: 30 !default;
+
+// Container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+$font-family-modern: "Courier New", "Lucida Sans Unicode", "Lucida Grande", "Inconsolata", monospace !default;
+$font-family-base: $font-family-modern !default;
+
+$font-size-base: 1rem !default;
+$font-weight-base: 400 !default;
+
+$line-height-base: 1.5 !default;
+
+$table-cell-padding: 0.5rem !default;
+$table-bg: $black !default;
+$table-color: $green !default;
+$table-border-width: 1px !default;
+$table-border-color: $green !default;
+
+$input-padding-y: 0.4rem !default;
+$input-padding-x: 0.7rem !default;

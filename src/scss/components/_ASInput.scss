@@ -1,0 +1,49 @@
+.as-input {
+    display: inline-block;
+    border-bottom: 1px solid $green;
+    &.fluid {
+        width: 100%;
+    }
+    .as-input-field {
+        position: relative;
+        min-width: 15ch;
+        line-height: 18px;
+        input {
+            font-family: $font-family-base;
+            font-weight: $font-weight-base;
+            font-size: $font-size-base;
+            background-color: transparent;
+            border: none;
+            color: $green;
+            width: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            &:focus, &:active {
+                outline: none;
+                & + span + .as-input-field__cursor {
+                    display: inline-block;
+                }
+            }
+        }
+        .as-input-field__content {
+            display: block;
+            float: left;
+            mix-blend-mode: exclusion;
+            min-height: 18px;
+            .emulate-space {
+                display: inline-block;
+                width: 1ch;
+            }
+        }
+        .as-input-field__cursor {
+            display: none;
+            width: 1ch;
+            height: 18px;
+            background: currentColor;
+            vertical-align: text-bottom;
+        }
+    }
+}

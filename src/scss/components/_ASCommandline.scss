@@ -1,0 +1,15 @@
+.as-commandline {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    &> label {
+        flex: 1 0 100%;
+    }
+    &> span {
+        flex: 0 1 50px;
+        display: inline-block;
+    }
+    &> .as-input {
+        flex: 1 0 0;
+    }
+}

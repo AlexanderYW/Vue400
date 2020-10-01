@@ -1,0 +1,46 @@
+html, body {
+    font-family: $font-family-base;
+    font-weight: $font-weight-base;
+    font-size: $font-size-base;
+    color: $green;
+    // background-color: $black;
+    -webkit-text-size-adjust: 100%;
+}
+
+::selection {
+    text-shadow: none;
+    opacity: 1;
+
+    // Google forces the selection to be transparent, to prevent that we use 0.99 to avoid it
+    background: rgba($green, 0.99);
+    color: rgba($black, 0.99);
+}
+
+$sizes: 2px, 4px, 6px, 8px, 10px, 12px;
+
+@each $size in $sizes {
+    $i: index(($sizes), ($size));
+    .p-#{$i} {
+        padding: #{$size};
+    }
+    .pt-#{$i} {
+        padding-top: #{$size};
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$size};
+    }
+    .pl-#{$i} {
+        padding-left: #{$size};
+    }
+    .pr-#{$i} {
+        padding-right: #{$size};
+    }
+    .px-#{$i} {
+        padding-left: #{$size};
+        padding-right: #{$size};
+    }
+    .py-#{$i} {
+        padding-top: #{$size};
+        padding-bottom: #{$size};
+    }
+}

@@ -1,0 +1,14 @@
+.as-grid {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: $grid-gutter-width / 2 + px;
+}
+:not(.as-grid-item) > .as-grid {
+    margin-right: -$grid-gutter-width / 2 + px;
+    margin-left: -$grid-gutter-width / 2 + px;
+}
+
+.as-grid-item {
+
+}

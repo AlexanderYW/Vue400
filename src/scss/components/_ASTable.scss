@@ -1,0 +1,12 @@
+.as-table {
+    display: inline-block;
+    &.fluid {
+        width: 100%;
+    }
+    table {
+        width: 100%;
+        th, td {
+            padding: 1px 4px;
+        }
+    }
+}
