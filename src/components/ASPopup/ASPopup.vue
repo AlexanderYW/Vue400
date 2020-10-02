@@ -28,7 +28,7 @@ import { Vue, Component, Model } from 'vue-property-decorator'
   },
   computed: {
     inputListeners: function () {
-      var vm = this
+      // var vm = this
       // `Object.assign` merges objects together to form a new object
       return Object.assign({},
         // We add all the listeners from the parent

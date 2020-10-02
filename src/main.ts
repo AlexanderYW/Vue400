@@ -1,12 +1,7 @@
 "use strict";
 import Vue, { VueConstructor } from 'vue/types/umd'
-import App from './App.vue'
 
 Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
 
 import './scss/AS400.scss'
 

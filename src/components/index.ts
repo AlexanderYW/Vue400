@@ -9,17 +9,19 @@ import ASFunctionKey from './ASFunctionKey'
 import ASMenu from './ASMenu'
 import ASInput from './ASInput'
 import ASInputGroup from './ASInputGroup'
+import ASPopup from './ASPopup'
 
 export default {
-    components: {
-        ASContainer,
-        ASGrid,
-        ASHeader,
-        ASMessageArea,
-        ASCommandline,
-        ASFunctionKey,
-        ASMenu,
-        ASInput,
-        ASInputGroup
-    }    
+  components: {
+    ASContainer,
+    ASGrid,
+    ASHeader,
+    ASMessageArea,
+    ASCommandline,
+    ASFunctionKey,
+    ASMenu,
+    ASInput,
+    ASInputGroup,
+    ASPopup
+  }    
 }

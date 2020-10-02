@@ -1,15 +1,30 @@
 {
-  "name": "vue-as-400",
+  "name": "vue400",
+  "description": "Vue400 component based framework for Vue.js",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "private": false,
+  "author": "Alexander Wennerstrøm <alexanderw0310@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib",
+    "build": "vue-cli-service build --target lib --name Vue400 ./src/entry.ts",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "storybook:build": "build-storybook",
     "storybook:serve": "start-storybook"
+  },
+  "main": "dist/Vue400.common.js",
+  "browser": "dist/Vue400.umd.js",
+  "style": "dist/Vue400.css",
+  "unpkg": "dist/Vue400.umd.js",
+  "bugs": {
+    "url": "https://github.com/AlexanderYW/Vue400/issues"
+  },
+  "homepage": "https://github.com/AlexanderYW/Vue400#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderYW/Vue400.git"
   },
   "dependencies": {
     "core-js": "^3.4.3",
@@ -30,10 +45,13 @@
     "@storybook/vue": "^6.0.22",
     "@types/chai": "^4.2.12",
     "@types/mocha": "^8.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/experimental-utils": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
     "@vue/cli-plugin-babel": "^4.5.6",
     "@vue/cli-plugin-e2e-cypress": "^4.5.6",
     "@vue/cli-plugin-eslint": "^4.5.6",
-    "@vue/cli-plugin-typescript": "^4.5.6",
+    "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-plugin-unit-mocha": "^4.5.6",
     "@vue/cli-service": "^4.5.6",
     "@vue/eslint-config-typescript": "^5.1.0",

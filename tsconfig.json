@@ -11,8 +11,9 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false, // TODO
     "sourceMap": true,
+    "noImplicitAny": false, // TODO: Only temp
     "baseUrl": ".",
     "types": [
       "webpack-env",

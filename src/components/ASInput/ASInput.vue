@@ -94,7 +94,7 @@ import { DataMixin } from '../../mixins/data'
     parsedValue: function() {
       return this.value.replace(/ /g, '<span class="emulate-space"> </span>')
     }
-  },
+  } as any,
 })
 export default class ASInput extends Vue {
   @Model('input', { type: String }) public value!: string
