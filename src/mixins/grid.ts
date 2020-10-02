@@ -37,7 +37,7 @@ const gridItemMixin = {
       }
       return {}
     }
-  }
+  } as any
 }
 
 const gridUtilsMixin = {
@@ -68,7 +68,7 @@ const gridAreaMixin = {
       }
       return {}
     }
-  }
+  } as any
 }
 
 const gridSiteMixin = {
@@ -99,7 +99,7 @@ const gridSiteMixin = {
         gridTemplateAreas: this.gridTemplateAreas || null
       }
     }
-  }
+  } as any
 }
 
 export { gridItemMixin, gridUtilsMixin, gridSiteMixin, gridAreaMixin }
