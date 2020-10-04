@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 // import { Meta, Story } from '@storybook/vue/types-6-0'; // TODO: Storybook 6.1.x
 import { Meta, Story } from '@storybook/vue/dist/typings.d'; // Storybook 6.0.x
-import { ASInput } from '../components/ASInput'
+import { ASInput } from '../../src/components/ASInput'
 
 export default {
   title: 'ASInput',

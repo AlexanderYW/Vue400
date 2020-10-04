@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
 
 // import * as components from '../components'
-import { ASFunctionKey } from '../components/ASFunctionKey'
+import { ASFunctionKey } from '../../src/components/ASFunctionKey'
 
 storiesOf('ASFunctionKey', module)
   .add('Function key - Enter', () => ({

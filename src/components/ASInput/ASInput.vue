@@ -4,7 +4,6 @@
     <div class="as-input-field">
       <input
         :value="value"
-        type="text"
         ref="caretInput"
         :style="`width:${width}ch;`"
         v-bind="$attrs"

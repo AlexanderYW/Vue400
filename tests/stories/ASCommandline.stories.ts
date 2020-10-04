@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
 
 // import * as components from '../components'
-import { ASCommandline } from '../components/ASCommandline'
+import { ASCommandline } from '../../src/components/ASCommandline'
 
 storiesOf('ASCommandline', module)
   .add('Commandline', () => ({

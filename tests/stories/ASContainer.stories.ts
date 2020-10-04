@@ -2,7 +2,7 @@
 import { storiesOf } from '@storybook/vue'
 
 // import * as components from '../components'
-import { ASContainer } from '../components/ASContainer'
+import { ASContainer } from '../../src/components/ASContainer'
 
 storiesOf('ASContainer', module)
   .add('Normal', () => ({

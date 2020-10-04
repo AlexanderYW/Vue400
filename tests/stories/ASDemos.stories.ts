@@ -2,11 +2,11 @@
 import { storiesOf } from '@storybook/vue'
 
 // import * as components from '../components'
-import { ASTable } from '../components/ASTable'
-import { ASCommandline } from '../components/ASCommandline'
-import { ASFunctionKey } from '../components/ASFunctionKey'
-import { ASPopup } from '../components/ASPopup'
-import { ASGrid, ASGridSite, ASGridItem } from '../components/ASGrid'
+import { ASTable } from '../../src/components/ASTable'
+import { ASCommandline } from '../../src/components/ASCommandline'
+import { ASFunctionKey } from '../../src/components/ASFunctionKey'
+import { ASPopup } from '../../src/components/ASPopup'
+import { ASGrid, ASGridSite, ASGridItem } from '../../src/components/ASGrid'
 
 storiesOf('AS Demos', module)
   .add('Food menu', () => ({
