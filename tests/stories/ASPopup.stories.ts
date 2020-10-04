@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 // import { Meta, Story } from '@storybook/vue/types-6-0'; // TODO: Storybook 6.1.x
 import { Meta, Story } from '@storybook/vue/dist/typings.d'; // Storybook 6.0.x
-import { ASPopup } from '../components/ASPopup'
+import { ASPopup } from '../../src/components/ASPopup'
 
 export default {
   title: 'ASPopup',

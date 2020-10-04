@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
 
-// import * as components from '../components'
-import { ASTable } from '../components/ASTable'
+// import * as components from '../../src/components'
+import { ASTable } from '../../src/components/ASTable'
 
 storiesOf('ASTable', module)
   .add('Table', () => ({

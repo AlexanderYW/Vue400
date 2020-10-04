@@ -1,9 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
 
-// import * as components from '../components'
-import { ASContainer } from '../components/ASContainer'
-import { ASGrid, ASGridItem } from '../components/ASGrid'
+// import * as components from '../../src/components'
+import { ASContainer } from '../../src/components/ASContainer'
+import { ASGrid, ASGridItem } from '../../src/components/ASGrid'
 
 storiesOf('ASGrid', module)
   .add('Normal', () => ({
