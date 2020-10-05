@@ -33,7 +33,7 @@
     "vue-property-decorator": "^9.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.0.22",
+    "@storybook/addon-actions": "^6.0.26",
     "@storybook/addon-backgrounds": "^6.0.26",
     "@storybook/addon-controls": "^6.0.22",
     "@storybook/addon-docs": "^6.0.22",
