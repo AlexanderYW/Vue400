@@ -38,7 +38,7 @@
     "@storybook/addon-controls": "^6.0.22",
     "@storybook/addon-docs": "^6.0.22",
     "@storybook/addon-links": "^6.0.22",
-    "@storybook/addon-storysource": "^6.0.22",
+    "@storybook/addon-storysource": "^6.0.25",
     "@storybook/addon-viewport": "^6.0.22",
     "@storybook/preset-scss": "^1.0.2",
     "@storybook/theming": "^6.0.22",
