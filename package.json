@@ -45,7 +45,7 @@
     "@storybook/vue": "^6.0.26",
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.0.3",
-    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/experimental-utils": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
     "@vue/cli-plugin-babel": "^4.5.7",
