@@ -44,7 +44,7 @@
     "@storybook/theming": "^6.0.28",
     "@storybook/vue": "^6.0.28",
     "@types/chai": "^4.2.14",
-    "@types/mocha": "^8.0.3",
+    "@types/mocha": "^8.2.0",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/experimental-utils": "^4.4.1",
     "@typescript-eslint/parser": "^4.7.0",
