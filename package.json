@@ -30,7 +30,7 @@
     "core-js": "^3.8.1",
     "vue": "^2.6.12",
     "vue-class-component": "^7.0.2",
-    "vue-property-decorator": "^9.0.2"
+    "vue-property-decorator": "^9.1.2"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.1.11",
