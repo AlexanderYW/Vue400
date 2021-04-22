@@ -58,7 +58,7 @@
     "@vue/test-utils": "^1.1.4",
     "babel-preset-vue": "^2.0.2",
     "chai": "^4.3.4",
-    "eslint": "^7.23.0",
+    "eslint": "^7.24.0",
     "eslint-plugin-vue": "^7.8.0",
     "sass": "^1.32.11",
     "sass-loader": "^10.1.1",
