@@ -27,7 +27,7 @@
     "url": "git+https://github.com/AlexanderYW/Vue400.git"
   },
   "dependencies": {
-    "core-js": "^3.11.1",
+    "core-js": "^3.12.0",
     "vue": "^2.6.12",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^9.1.2"
